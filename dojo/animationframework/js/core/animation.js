@@ -192,8 +192,8 @@ function Animation(width, height, firstSceneId, minWidth, maxWidth, minHeight, m
     this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_1.png');
     this.loader.loadimage.setAttribute('class', 'percentage');
 
-    // var logo = document.createElement('img');
-    // logo.setAttribute('src', 'images/logo.jpg');
+    var logo = document.createElement('img');
+    logo.setAttribute('src', 'images/blank.png');
 
     // add everything to the loader-div
     this.loader.inner.appendChild(logo);

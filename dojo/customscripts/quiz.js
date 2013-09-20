@@ -24,7 +24,7 @@ function quizQuestion(scene, key, nextQuestion){
 	}
 
 	if (typeof thisQuestion.data.audiopath !== 'undefined' && thisQuestion.data.audiopath !== '') {
-		thisQuestion.audioplayer = scene.createActor('sprecher.png', 320, 230, 50, 50).plays(thisQuestion.data.audiopath, 'sprecher.png');
+		thisQuestion.audioplayer = scene.createActor('blank.png', 320, 230, 50, 50).plays(thisQuestion.data.audiopath, 'blank.png');
 	} else {
 		thisQuestion.audioplayer = scene.createActor('blank.png', 0, 0, 0, 0);
 	}
@@ -47,21 +47,21 @@ function quizQuestion(scene, key, nextQuestion){
 	var answerYPosition = 165;
 	var nextAnswerYPositionStep = 90;
 
-	var weiterbutton = scene.createActor('rechts.png', 410, 425, 160, 50).isOnTop(3);
+	var weiterbutton = scene.createActor('rechts.png', 410, 425, 50, 50).isOnTop(3);
 
 	for (var i = 0; i < thisQuestion.data.answers.length; i++) {
 		var qData = thisQuestion.data.answers[i];
 		var myHeight = ((Math.ceil(qData.title.length / 18)+1) * 27);
 
 		var answeractor = scene.createActor('blank.png', 530, answerYPosition, 220, myHeight);
-		var answerplayer = scene.createActor('sprecher', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'sprecher.png');
+		var answerplayer = scene.createActor('sprecher.png', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'blank.png');
 		answeractor.setText(qData.title, '', 'quiz answer answer' + i);
 		answeractor.letsAppear(black, 0, 0);
 		thisQuestion.answerActors.push(answeractor);
 
 		if (qData.correct) {
 			// correct answer
-			var correctactor = scene.createActor('richtig.png', 250, 130, 465, 410).isOnTop(2).addClass('answer' + i);
+			var correctactor = scene.createActor('richtig.png', 250, 130, 100, 100).isOnTop(2).addClass('answer' + i);
 			correctactor.setText(qData.explanation, '', 'quiz correct explanation');
 			weiterbutton.letsDissolve(correctactor);
 			weiterbutton.letsDissolve(answerplayer);
@@ -72,7 +72,7 @@ function quizQuestion(scene, key, nextQuestion){
 
 		} else {
 			// wrong answer
-			var wrongactor = scene.createActor('falsch.png', 250, 130).isOnTop(2);
+			var wrongactor = scene.createActor('falsch.png', 250, 130, 100, 100).isOnTop(2);
 			wrongactor.setText(qData.explanation, '', 'quiz wrong explanation');
 			answeractor.letsAppear(wrongactor);
 			answeractor.letsAppear(weiterbutton);

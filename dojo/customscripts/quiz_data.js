@@ -38,9 +38,9 @@ function quizData(key){
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Exzellent kombiniert!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja, denn schließlich kann man nie genug Wissen ansammeln!', audiopath: 'quack'},
-				{correct: true, title: 'Es gibt eine Nuss zu knacken', explanation: 'Gaaaanz recht, denn viele Rätsel wollen gelöst werden, um hier weiterzukommen.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Fein!', audiopath: 'quack'},
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'},
+				{correct: true, title: 'Es gibt eine Nuss zu knacken', explanation: 'Ja.', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -52,9 +52,9 @@ function quizData(key){
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Und das funktioniert sogar.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Kaum zu glauben, ich weiß, aber so erzählt man es sich hier in Merlantis.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Wohl wahr, denn Hirsche müssen auch ihr Revier verteidigen.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Korrekt.', audiopath: 'quack'},
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'},
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Richtig.', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -66,9 +66,9 @@ function quizData(key){
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Vollkommen überbewertet! Du musst ja auch nicht dauernd.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Exzellent! Zu dem eingebauten Navi von Tauben erfährst Du im Raum der Sinne noch mehr.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Gaaaanz richtig! Seit jeher ist die weiße Taube mit Olivenzweig ein Friedenssymbol.', audiopath: 'quack'}
+				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein.', audiopath: 'quack'},
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'},
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
 			]	
 		}
 	}
