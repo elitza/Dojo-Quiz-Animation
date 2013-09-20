@@ -189,11 +189,11 @@ function Animation(width, height, firstSceneId, minWidth, maxWidth, minHeight, m
 
     // spinning gif
     this.loader.loadimage = document.createElement('img');
-    this.loader.loadimage.setAttribute('src', 'images/loader/ML_00.jpg');
+    this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_1.png');
     this.loader.loadimage.setAttribute('class', 'percentage');
 
-    var logo = document.createElement('img');
-    logo.setAttribute('src', 'images/logo.jpg');
+    // var logo = document.createElement('img');
+    // logo.setAttribute('src', 'images/logo.jpg');
 
     // add everything to the loader-div
     this.loader.inner.appendChild(logo);
@@ -215,7 +215,7 @@ function Animation(width, height, firstSceneId, minWidth, maxWidth, minHeight, m
     percentage = percentage < 10 ? '0' + percentage : percentage;
 
     // pick the right image
-    this.loader.loadimage.setAttribute('src', 'images/loader/ML_' + percentage + '.jpg');
+    this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_' + percentage + '.png');
     console.log("this.loader.loadimage.src: " + this.loader.loadimage.src);
 	};
 
@@ -424,7 +424,7 @@ function animationLoader(title, width, height, firstSceneId, minWidth, maxWidth,
 			// according to animationconfig.js the animation should wait for the server to
 			// return a result. In the meantime we show a rotating waiting.gif.
 			var waitingImg = document.createElement('img');
-			waitingImg.src = "images/waiting.gif";
+			waitingImg.src = "images/blank.png";
 			window.animation.waitingDiv = document.createElement('div');
 			window.animation.waitingDiv.id = 'waitingdiv';
 			window.animation.waitingDiv.appendChild(waitingImg);

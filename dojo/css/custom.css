@@ -40,7 +40,7 @@
     .text.eulenrat .inner, .hastext.eulenrat .inner {
       width: 470px;
       padding: 0;
-      font-family: "de-walpergens-pica", serif;
+      font-family: "Helvetica", serif;
       font-size: 20px;
       line-height: 30px;
       color: #2d1c13; }
@@ -48,7 +48,7 @@
         margin: 10px 5px; }
 
 .scene div:active, .scene div:hover, .scene img:active, .scene img:hover {
-  cursor: url("/images/cursor/cursor3.png") 0 0, auto; }
+  cursor: url("/images/cursor.png") 0 0, auto; }
 
 /* =========================================================== */
 /* FALLBACK */
