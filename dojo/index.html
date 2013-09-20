@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+
+Animation.io, an interactive and extendable animation framework
+
+official website: http://animation.io
+support group: http://group.animation.io
+open source code: https://github.com/mehreinfach/animation.io
+a project by Mehreinfach: http://mehreinfach.de
+
+-->
+
+<html>
+<head>
+	<title>CoderDojo Animation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<script type="text/javascript" src="//use.typekit.net/jph2omb.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" type="text/css" href="animationframework/css/core.css" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/custom.css" charset="utf-8">
+
+	<!-- third party scripts: -->
+	<script src="animationframework/js/third-party/underscore-min.js"></script>
+	<script src="animationframework/js/third-party/browserdetect.js"></script>
+
+	<!-- animation core: -->
+	<script src="animationframework/js/core/animation.js"></script>
+	<script src="animationframework/js/core/faders.js"></script>
+	<script src="animationframework/js/core/actor.js"></script>
+	<script src="animationframework/js/core/actor.js"></script>
+	<script src="animationframework/js/core/actor.reset.js"></script>
+	<script src="animationframework/js/core/actor.animate.js"></script>
+	<script src="animationframework/js/core/actor.phases.js"></script>
+	<script src="animationframework/js/core/actor.behaviors.js"></script>
+	<script src="animationframework/js/core/actor.position.js"></script>
+	<script src="animationframework/js/core/opacityvisibility.js"></script>
+	<script src="animationframework/js/core/reaction.js"></script>
+	<script src="animationframework/js/core/helpers.js"></script>
+	<script src="animationframework/js/core/scene.js"></script>
+	<script src="animationframework/js/core/scene.reset.js"></script>
+  <script src="animationframework/js/core/navigation.js"></script>
+	<script src="animationframework/js/core/loading.js"></script>
+	<script src="animationframework/js/plugins/imageactor.js"></script>
+	<script src="animationframework/js/plugins/videoactor.js"></script>
+  <script src="animationframework/js/plugins/vimeoactor.js"></script>
+	<script src="animationframework/js/plugins/popupactor.js"></script>
+	<script src="animationframework/js/core/plugin.js"></script>
+	<script src="animationframework/js/core/eventhandling.js"></script>
+	<script src="animationframework/js/core/array-extension.js"></script>
+	<script src="animationframework/js/core/browserdetection.js"></script>
+	<script src="animationframework/js/core/identity.js"></script>
+	<script src="animationframework/js/core/ajax.js"></script>
+	<script src="animationframework/js/core/layers.js"></script>
+	<script src="animationframework/js/core/scrolling/scrolling.js"></script>
+	<script src="animationframework/js/core/scrolling/scrollsto.js"></script>
+	<script src="animationframework/js/core/scrolling/scrollsby.js"></script>
+	<script src="animationframework/js/core/scrolling/scrollsonhover.js"></script>
+
+	<!-- animation configuration -->
+	<script src="animationframework/js/animationconfig.js"></script>
+
+	<!-- animation plugins: -->
+	<script src="animationframework/js/plugins/waves.js"></script>
+	<script src="animationframework/js/plugins/appears.js?"></script>
+	<script src="animationframework/js/plugins/moves.js"></script>
+	<script src="animationframework/js/plugins/movesto.js"></script>
+	<script src="animationframework/js/plugins/swings.js"></script>
+	<script src="animationframework/js/plugins/pulsates.js"></script>
+	<script src="animationframework/js/plugins/dissolves.js"></script>
+	<script src="animationframework/js/plugins/rotates.js"></script>
+	<script src="animationframework/js/plugins/plays.js"></script>
+	<script src="animationframework/js/plugins/drifts.js"></script>
+	<script src="animationframework/js/plugins/shakes.js"></script>
+	<script src="animationframework/js/plugins/links.js"></script>
+	<script src="animationframework/js/plugins/resetreactions.js"></script>
+	<script src="animationframework/js/plugins/resetbehaviors.js"></script>
+	<script src="animationframework/js/plugins/togglestext.js"></script>
+	<script src="animationframework/js/plugins/passestouchthrough.js"></script>
+	<script src="animationframework/js/plugins/clonesmovement.js"></script>
+	<script src="animationframework/js/plugins/counts.js"></script>
+	<script src="animationframework/js/plugins/hastext.js"></script>
+	<script src="animationframework/js/plugins/multiplechoice.js"></script>
+	<script src="animationframework/js/plugins/changesimagesrc.js"></script>
+	<script src="animationframework/js/plugins/circles.js"></script>
+	<script src="animationframework/js/plugins/popup.js"></script>
+	<script src="animationframework/js/plugins/bounces.js"></script>
+	<script src="animationframework/js/plugins/videoplay.js"></script>
+	<script src="animationframework/js/plugins/videopause.js"></script>
+	<script src="animationframework/js/plugins/vimeoplay.js"></script>
+	<script src="animationframework/js/plugins/vimeopause.js"></script>
+   	<script src="animationframework/js/plugins/sync.js"></script>
+	<script src="animationframework/js/plugins/popupscrolling.js"></script>
+	<script src="animationframework/js/plugins/hastextscrolling.js"></script>
+	<script src="animationframework/js/plugins/hide.js"></script>
+	<script src="animationframework/js/plugins/stopping.js"></script>
+	<script src="animationframework/js/plugins/crank.js"></script>
+
+  <!-- your custom scripts -->
+  <script src="customscripts/meta.js"></script>
+  <script src="customscripts/quiz.js"></script>
+  <script src="customscripts/quiz_data.js"></script>
+
+	<!-- your scenes: -->
+
+	<script src="scenes/scene0.js"></script>
+	<script src="scenes/scene1.js"></script>
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+	<div id="preload" style="display: none;">
+		<!-- preload files for scene0: -->
+		<img src="images/texture.jpg">
+	</div>
+
+
+	
+
+	</div>
+
+	<div id="animframe" style="width: 960px; height: 660px !important; margin: 65px auto;"></div>
+
+
+	<div id="fallback" class="fallback" style="display:none;">
+		<div class="inner">
+			<h1>Bitte Browser updaten!</h1>
+			<p>
+				Diese Animation erfordert einen modernen Browser mit aktiviertem JavaScript.
+				Sie könnten zum Beispiel einen der folgenden Browser installieren:
+			</p>
+			<p>
+				<a href="www.google.com/chrome/‎" target="_blank">Chrome</a>
+				<a href="http://www.mozilla.org/de-DE/firefox" target="_blank">Firefox</a>
+				<br />
+				<a href="http://windows.microsoft.com/de-de/internet-explorer/download-ie" target="_blank">Internet Explorer (ab Version 9)</a>
+				<a href="http://www.apple.com/de/safari/" target="_blank">Safari (für Apple)</a>
+			</p>
+			<p>
+				Wenn Sie bereits einen dieser Browser installiert haben, stellen Sie bitte sicher, dass Sie die neueste Version verwenden.
+			</p>
+		</div>
+	</div>
+
+	<noscript>
+		<div id="noscript" class="fallback">
+			<div class="inner">
+				<h1>Bitte JavaScript anschalten!</h1>
+				<p>
+					Dies ist eine interaktive Animation, die mit HTML5 und 
+					JavaScript realisiert ist. Im Moment ist JavaScript in Deinem 
+					Browser ausgeschaltet. Bitte wende Dich an Deine Eltern,
+					damit Sie Dir weiterhelfen. 
+				</p>
+			</div>
+		</div>
+	</noscript>
+
+	<script>
+		loadAnimationInto('CoderDojo Animation', 'animframe', 'scene0', 960, 660);
+		// loadAnimationInto('Animation Framework', 'animframe', 'scene0', 800, 600);
+		developermode = true;
+	</script>
+</body>
+</html>
