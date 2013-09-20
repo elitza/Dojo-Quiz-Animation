@@ -24,7 +24,7 @@ function quizQuestion(scene, key, nextQuestion){
 	}
 
 	if (typeof thisQuestion.data.audiopath !== 'undefined' && thisQuestion.data.audiopath !== '') {
-		thisQuestion.audioplayer = scene.createActor('sprecher.png', 320, 230, 66, 52).plays(thisQuestion.data.audiopath, 'eulenrat_audio.gif');
+		thisQuestion.audioplayer = scene.createActor('sprecher.png', 320, 230, 50, 50).plays(thisQuestion.data.audiopath, 'sprecher.png');
 	} else {
 		thisQuestion.audioplayer = scene.createActor('blank.png', 0, 0, 0, 0);
 	}
@@ -54,7 +54,7 @@ function quizQuestion(scene, key, nextQuestion){
 		var myHeight = ((Math.ceil(qData.title.length / 18)+1) * 27);
 
 		var answeractor = scene.createActor('blank.png', 530, answerYPosition, 220, myHeight);
-		var answerplayer = scene.createActor('sprecher', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'eulenrat_audio_small.gif');
+		var answerplayer = scene.createActor('sprecher', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'sprecher.png');
 		answeractor.setText(qData.title, '', 'quiz answer answer' + i);
 		answeractor.letsAppear(black, 0, 0);
 		thisQuestion.answerActors.push(answeractor);

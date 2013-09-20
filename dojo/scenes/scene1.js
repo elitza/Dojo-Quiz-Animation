@@ -6,7 +6,7 @@ var scene1 = function () {
   var bg = scene.createActor('texture1.jpg', 0, 0, 960, 660);
 
   // starting/closing the quiz
-  var close = scene.createActor('links.png', 760, 60);
+  var close = scene.createActor('links.png', 760, 60, 50, 50);
   close.navigatesAndLoadsOnTouch('scene0');
 
   var frage10 = quizQuestion(scene, 'q1_10');

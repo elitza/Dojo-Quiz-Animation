@@ -20,7 +20,7 @@ function quizData(key){
 	if (key === 'q1_1') {
 		ret = {
 			title: "Frage 1",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -34,7 +34,7 @@ function quizData(key){
 	if (key === 'q1_2') {
 		ret = {
 			title: "Frage 2",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -48,7 +48,7 @@ function quizData(key){
 	if (key === 'q1_3') {
 		ret = {
 			title: "Frage 3",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -62,7 +62,7 @@ function quizData(key){
 	if (key === 'q1_4') {
 		ret = {
 			title: "Frage 4",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -76,7 +76,7 @@ function quizData(key){
 	if (key === 'q1_5') {
 		ret = {
 			title: "Frage 5",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -90,7 +90,7 @@ function quizData(key){
 	if (key === 'q1_6') {
 		ret = {
 			title: "Frage 6",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -104,7 +104,7 @@ function quizData(key){
 	if (key === 'q1_7') {
 		ret = {
 			title: "Frage 7",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -118,7 +118,7 @@ function quizData(key){
 	if (key === 'q1_8') {
 		ret = {
 			title: "Frage 8",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -132,7 +132,7 @@ function quizData(key){
 	if (key === 'q1_9') {
 		ret = {
 			title: "Frage 9",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
@@ -146,7 +146,7 @@ function quizData(key){
 	if (key === 'q1_10') {
 		ret = {
 			title: "Frage 10",
-			imagepath: 'szene1/1.png',
+			imagepath: '1.png',
 			audiopath: 'kraehe',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
