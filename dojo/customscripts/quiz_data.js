@@ -147,7 +147,7 @@ function quizData(key){
 		ret = {
 			title: "Frage 10",
 			imagepath: '1.png',
-			audiopath: 'kraehe',
+			audiopath: '',
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja', audiopath: 'quack'},
