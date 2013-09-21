@@ -10,10 +10,10 @@ function quizData(key){
 			one_question: 'eine Frage',
 			x_questions: '%count% Fragen',
 			resultsTitle: 'Auswertung',
-			level1: "Toll! Niemand <a href=\"http://mehreinfach.de\">Mehreinfach</a> hätte es nicht besser wissen können.",
-			level2: 'Wirklich gut! <a href=\"http://mehreinfach.de\">Mehreinfach</a> ist beeindruckt. Immerhin %correct% richtig von %total% insgesamt!',
-			level3: 'Gar nicht schlecht. <a href=\"http://mehreinfach.de\">Mehreinfach</a> hofft es hat Dir gefallen. Immerhin %correct% richtig von %total% insgesamt!',
-			level4: 'Schade! Du warst vielleicht etwas zu aufgeregt. Viel Glück beim nächsten Mal wünscht <a href=\"http://mehreinfach.de\">Mehreinfach</a>. (In diesem Versuch hast Du %correct% richtig getroffen, von %total% insgesamt)',
+			level1: "Toll! Niemand hätte es nicht besser wissen können.",
+			level2: 'Wirklich gut! Immerhin %correct% richtig von %total% insgesamt!',
+			level3: 'Gar nicht schlecht. Immerhin %correct% richtig von %total% insgesamt!',
+			level4: 'Schade! Du warst vielleicht etwas zu aufgeregt. Viel Glück beim nächsten Mal. (In diesem Versuch hast Du %correct% richtig getroffen, von %total% insgesamt)',
 			}
 	}
 
