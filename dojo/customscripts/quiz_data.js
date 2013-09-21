@@ -10,9 +10,9 @@ function quizData(key){
 			one_question: 'eine Frage',
 			x_questions: '%count% Fragen',
 			resultsTitle: 'Auswertung',
-			level1: "Exzellent, ich hätte es selbst nicht besser wissen können. ",
-			level2: 'Nun, das war schon mal eine wirklich brauchbare Leistung. Immerhin %correct% richtig von %total% insgesamt!',
-			level3: 'Das war schon mal ein ziemlich guter Versuch. Immerhin %correct% richtig von %total% insgesamt!',
+			level1: "Toll! Niemand hätte es besser wissen können. ",
+			level2: 'Wirklich gut! Immerhin %correct% richtig von %total% insgesamt!',
+			level3: 'Gar nicht schlecht. Immerhin %correct% richtig von %total% insgesamt!',
 			level4: 'Schade! Du warst vielleicht etwas zu aufgeregt.Viel Glück. Und bis zum nächsten Mal. (In diesem Versuch hast Du %correct% richtig getroffen, von %total% insgesamt)',
 			}
 	}
@@ -142,7 +142,7 @@ function quizData(key){
 			text: 'Welche Partei hat den Slogan: Gemeinsam erfolgreich',
 			answers: [
 				{correct: true, title: 'Die CDU', explanation: 'Ja', audiopath: 'richtig'},
-				{correct: false, title: 'Die SPD', explanation: 'Wie bitte?', audiopath: 'falsch'},
+				{correct: false, title: 'Die SPD', explanation: 'Unsinn!', audiopath: 'falsch'},
 			]	
 		}
 	}
