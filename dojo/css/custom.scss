@@ -231,14 +231,17 @@ table {
     .inner {
       margin: none;
       position: absolute;
-      border: none;
-      top: 140px;
-      right: 219px;
+      // border: none;
+      top: 250px;
+      left: 330px;
+      // text-align: center;
+      width: 200px;
+      // right: 219px;
     }
     .percentage {
       position: absolute;
-      right: 37px;
-      top: 49px;
+      // right: 37px;
+      // top: 49px;
     }
   }
 }

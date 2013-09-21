@@ -139,13 +139,11 @@ table {
   #stage .loader .inner {
     margin: none;
     position: absolute;
-    border: none;
-    top: 140px;
-    right: 219px; }
+    top: 250px;
+    left: 330px;
+    width: 200px; }
   #stage .loader .percentage {
-    position: absolute;
-    right: 37px;
-    top: 49px; }
+    position: absolute; }
 
 #rahmen_wrapper {
   position: absolute;

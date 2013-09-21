@@ -25,7 +25,6 @@ div, img {
     background-color: rgba(0, 0, 0, 0.4); }
     .stage .loader .inner {
       text-align: center;
-      border: 1px solid red;
       padding-top: 50px;
       overflow: hidden;
       margin: 0 auto;
@@ -98,23 +97,23 @@ div, img {
       top: -32px;
       right: 0; }
 
-
 /* useful stuff */
-
 .flip-horizontal {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   transform: scaleX(-1);
-  -ms-filter: fliph; /*IE*/
-  filter: fliph; /*IE*/
-}
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
 
 .flip-vertical {
   -moz-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   transform: scaleY(-1);
-  -ms-filter: flipv; /*IE*/
-  filter: flipv; /*IE*/
-}
+  -ms-filter: flipv;
+  /*IE*/
+  filter: flipv;
+  /*IE*/ }

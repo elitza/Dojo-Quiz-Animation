@@ -134,10 +134,10 @@ function showQuizResults(scene, triggerButton){
 
 	resultsHtml += '<h2>' + copyData.resultsTitle + '</h2>';
 
-	var quizResultsTitleActor = scene.createActor('blank.png', 220, 120, 200, 30);
+	var quizResultsTitleActor = scene.createActor('blank.png', 110, 120, 400, 40);
 	quizResultsTitleActor.setText(copyData.resultsTitle, '', 'quiz title');	
 
-	var quizResultsActor = scene.createActor('blank.png', 220, 200, 270, 350);
+	var quizResultsActor = scene.createActor('blank.png', 110, 200, 700, 400);
 	quizResultsActor.setText('', '', 'quiz results');
 	
 	triggerButton.letsAppear(quizResultsActor);
