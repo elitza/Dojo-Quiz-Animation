@@ -37,7 +37,7 @@ function quizQuestion(scene, key, nextQuestion){
 
 	var black = scene.createActor('blackblock_40_opacity.png', 0, 0, 960, 660).isOnTop();
 
-	var answerXPosition = 55;
+	var answerXPosition = 0;
 	var nextAnswerXPositionStep = 375;
 
 	var weiterbutton = scene.createActor('rechts.png', 610, 355, 50, 50).isOnTop(3);
@@ -45,7 +45,7 @@ function quizQuestion(scene, key, nextQuestion){
 	// LOOP THROUGH ANSWERS
 	for (var i = 0; i < thisQuestion.data.answers.length; i++) {
 		var qData = thisQuestion.data.answers[i];
-		var answeractor = scene.createActor('blank.png', answerXPosition, 500, 220, 300);
+		var answeractor = scene.createActor('blank.png', answerXPosition, 340, 220, 300);
 		var answerplayer = scene.createActor('sprecher.png', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'blank.png');
 		answeractor.setText(qData.title, '', 'quiz answer answer' + i);
 		answeractor.letsAppear(black, 0, 0);

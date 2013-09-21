@@ -264,7 +264,7 @@ function Animation(width, height, firstSceneId, minWidth, maxWidth, minHeight, m
 							tmp2 += "Couldn't determine userAgent.";
 						}
 
-						window.location.href = "mailto:speedlab@mehreinfach.de?subject=Merlantis:%20Objekte%20wurden%20nicht%20geladen&body=" + encodeURIComponent(tmp2);
+						window.location.href = "mailto:speedlab@mehreinfach.de?subject=%20Objekte%20wurden%20nicht%20geladen&body=" + encodeURIComponent(tmp2);
 						console.log("should send mail")
 					}
 				}

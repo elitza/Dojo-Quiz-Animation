@@ -6,7 +6,7 @@ function config(animation) {
     maximumLoadWait: minutesToMilliseconds(1.5),
     maximumLoadWaitExceededMessage1: "[MELDUNG ERSCHEINT NUR WÄHREND ENTWICKLUNG]\nDie maximale Ladezeit von 90 Sekunden wurde erreicht. Die Szene wird jetzt angezeigt. Folgende Objekte haben keine Lade-Rückmeldung gegeben:\n",
     maximumLoadWaitExceededMessage2: "\n\nMöchten Sie eine E-Mail an Mehreinfach senden mit wichtigen Infos zu diesen Ladeproblemen?",
-    cdnDomain: "http://merlantiscdn.animation.io"
+    cdnDomain: "http://yourcdn"
   }
 }
 var developermode = false;
