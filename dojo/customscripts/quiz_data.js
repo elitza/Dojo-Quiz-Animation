@@ -20,12 +20,12 @@ function quizData(key){
 	if (key === 'q1_1') {
 		ret = {
 			title: "Frage 1",
-			imagepath: '1.png',
+			imagepath: 'frage1.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Wofür steht die grüne Partei?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö!', audiopath: 'quack'}
+				{correct: true, title: 'Sie wollen mehr Umweltschutz.', explanation: 'Super!', audiopath: 'richtig'},
+				{correct: false, title: 'Sie wollen Atomstrom.', explanation: 'Falsch!', audiopath: 'falsch'}
 			]	
 		}
 	}
@@ -33,12 +33,12 @@ function quizData(key){
 	if (key === 'q1_2') {
 		ret = {
 			title: "Frage 2",
-			imagepath: '1.png',
+			imagepath: 'frage2.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Wer kandidiert zum Bundeskanzler?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Fein!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'}
+				{correct: true, title: 'Angela Merkel', explanation: 'Fein!', audiopath: 'richtig'},
+				{correct: false, title: 'Donald Tusk', explanation: 'So ein Quatsch!', audiopath: 'falsch'}
 			]	
 		}
 	}
@@ -46,12 +46,12 @@ function quizData(key){
 	if (key === 'q1_3') {
 		ret = {
 			title: "Frage 3",
-			imagepath: '1.png',
+			imagepath: 'frage3.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Wieviele Bundeskanzler gab es bis heute?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Korrekt.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
+				{correct: true, title: 'Es gab 8 Bundeskanzler.', explanation: 'Korrekt.', audiopath: 'richtig'},
+				{correct: false, title: 'Es gab 10 Bundeskanzler.', explanation: 'Falsch.', audiopath: 'falsch'}
 			]	
 		}
 	}
@@ -59,12 +59,12 @@ function quizData(key){
 	if (key === 'q1_4') {
 		ret = {
 			title: "Frage 4",
-			imagepath: '1.png',
+			imagepath: 'frage4.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Was ist eine Partei?',
 			answers: [
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'}
+				{correct: false, title: 'Eine Partei ist ein Fußballclub.', explanation: 'Nein.', audiopath: 'falsch'},
+				{correct: true, title: 'Eine Partei ist wählbar und hat ein Wahlprogramm.', explanation: 'Super!', audiopath: 'richtig'}
 			]	
 		}
 	}
@@ -72,12 +72,12 @@ function quizData(key){
 	if (key === 'q1_5') {
 		ret = {
 			title: "Frage 5",
-			imagepath: '1.png',
+			imagepath: 'frage5.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Wer war der erste deutsche Bundeskanzler?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ganz genau!', audiopath: 'quack'}
+				{correct: true, title: 'Konrad Adenauer', explanation: 'Super.', audiopath: 'richtig'},
+				{correct: false, title: 'Ludwig Erhard', explanation: 'Ganz genau!', audiopath: 'falsch'}
 			]	
 		}
 	}
@@ -85,12 +85,12 @@ function quizData(key){
 	if (key === 'q1_6') {
 		ret = {
 			title: "Frage 6",
-			imagepath: '1.png',
+			imagepath: 'frage6.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Welche Partei fordert 10 Euro Mindestlohn?',
 			answers: [
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Ähhh, wie kommst Du denn darauf?', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
+				{correct: false, title: 'Die SPD', explanation: 'Falsch!', audiopath: 'falsch'},
+				{correct: true, title: 'Die Linke', explanation: 'Ja.', audiopath: 'richtig'}
 			]	
 		}
 	}
@@ -98,13 +98,12 @@ function quizData(key){
 	if (key === 'q1_7') {
 		ret = {
 			title: "Frage 7",
-			imagepath: '1.png',
+			imagepath: 'frage7.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Welcher dieser beiden Politiker gehört zu den Grünen?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Ganz und gar nicht!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Richtig!', audiopath: 'quack'}
+				{correct: true, title: 'Volker Beck', explanation: 'Ja.', audiopath: 'richtig'},
+				{correct: false, title: 'Martin Wortmann', explanation: 'Ganz und gar nicht!', audiopath: 'falsch'},
 			]	
 		}
 	}
@@ -112,13 +111,12 @@ function quizData(key){
 	if (key === 'q1_8') {
 		ret = {
 			title: "Frage 8",
-			imagepath: '1.png',
+			imagepath: 'frage8.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Gibt es Wahlen für Kinder?',
 			answers: [
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Bravo!', audiopath: 'quack'}
+				{correct: false, title: 'Nein, natürlich nicht!', explanation: 'Nein', audiopath: 'falsch'},
+				{correct: true, title: 'Ja, aber keine richtigen Wahlen.', explanation: 'Bravo!', audiopath: 'richtig'}
 			]	
 		}
 	}
@@ -126,27 +124,25 @@ function quizData(key){
 	if (key === 'q1_9') {
 		ret = {
 			title: "Frage 9",
-			imagepath: '1.png',
+			imagepath: 'frage9.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Wieviel Prozent der Ingenieursstudenten sind weiblich?',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Bravo!', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö.', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein.', audiopath: 'quack'}
-			]	
+				{correct: true, title: '20,6%', explanation: 'Bravo!', audiopath: 'richtig'},
+				{correct: false, title: '40,8%', explanation: 'Nö.', audiopath: 'falsch'},
+			]
 		}
 	}
 
 	if (key === 'q1_10') {
 		ret = {
 			title: "Frage 10",
-			imagepath: '1.png',
+			imagepath: 'frage10.jpg',
 			audiopath: '',
-			text: 'Hier kommt deine Frage hin',
+			text: 'Welche Partei hat den Slogan: Gemeinsam erfolgreich',
 			answers: [
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Wie bitte?', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö.', audiopath: 'quack'}
+				{correct: true, title: 'Die CDU', explanation: 'Ja', audiopath: 'richtig'},
+				{correct: false, title: 'Die SPD', explanation: 'Wie bitte?', audiopath: 'falsch'},
 			]	
 		}
 	}
