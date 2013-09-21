@@ -3,13 +3,20 @@
 .text, .hastext {
   font-size: 20px;
   line-height: 30px;
-  font-family: Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
   display: block;
   padding: 5px 15px;
   margin: -5px -15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
+  .text.title, .hastext.title {
+    font-family: "sf_cartoonist_handbold";
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px; }
+  .text.text_auf_titelseite, .hastext.text_auf_titelseite {
+    width: 600px; }
   .text.grey, .text .grey, .hastext.grey, .hastext .grey {
     color: #aaa; }
   .text.black, .text .black, .hastext.black, .hastext .black {
@@ -38,7 +45,7 @@
     z-index: 100;
     color: #eee;
     margin: 170px auto;
-    font: 21px/28px "de-walpergens-pica", sans-serif; }
+    font: 21px/28px "sf_cartoonist_handregular", sans-serif; }
     .fallback .inner h1, .fallback .inner p {
       width: 570px;
       margin: 0 auto 34px; }
@@ -66,19 +73,16 @@
     font-size: 16px;
     line-height: 22px;
     font-family: sans-serif; }
-
-.button .inner {
-  text-align: left;
-  color: #fff;
-  font-size: 17pt;
-  line-height: 17pt;
-  margin-top: 38px;
-  margin-left: 10px;
-  font-weight: normal; }
+  .hastext.weiter .inner {
+    color: red;
+    margin-top: 16px;
+    font-size: 27px;
+    line-height: 27px;
+    font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif; }
 
 body {
   /* the page itself */
-  background-color: #fff;
+  background-color: #a6d6ec;
   background-repeat: no-repeat;
   background-position: center 80px;
   padding: 0;
@@ -111,7 +115,7 @@ table {
       background-image: url(/images/quiz/c.png); }
     #stage .quiz .inner {
       text-align: left;
-      font-family: "de-walpergens-pica", serif !important;
+      font-family: "sf_cartoonist_handregular", serif !important;
       font-size: 22px;
       line-height: 27px;
       color: #2d1c13;
@@ -120,6 +124,7 @@ table {
     #stage .quiz.title .inner {
       font-size: 30px;
       line-height: 40px;
+      font-family: "sf_cartoonist_handbold";
       font-weight: bold; }
     #stage .quiz.question .inner {
       font-size: 25px;
@@ -139,8 +144,8 @@ table {
   #stage .loader .inner {
     margin: none;
     position: absolute;
-    top: 250px;
-    left: 330px;
+    top: 160px;
+    left: 250px;
     width: 200px; }
   #stage .loader .percentage {
     position: absolute; }

@@ -2,7 +2,7 @@ var scene1 = function () {
   var scene = new Scene('scene1', 'Kanzler-Quiz', 990, 660); //
   scene.scrollingPerspective(5, 1);
 
-  var background = scene.createActor('background.jpg',0,0,960,660);
+  scene.createActor('background.gif',0,0,750,500);
 
   // setup the quiz
   // var bg = scene.createActor('texture1.jpg', 0, 0, 960, 660);

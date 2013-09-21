@@ -5,7 +5,7 @@
 .text, .hastext {
   font-size: 20px;
   line-height: 30px;
-  font-family: Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
 
   display: block;
   padding: 5px 15px;
@@ -15,6 +15,17 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+
+  &.title {
+    font-family: "sf_cartoonist_handbold";
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &.text_auf_titelseite {
+    width: 600px;
+  }
 
   &.grey, .grey {
     color: #aaa;    
@@ -65,7 +76,7 @@
     z-index: 100;
     color: #eee;
     margin: 170px auto;
-    font: 21px/28px "de-walpergens-pica", sans-serif;
+    font: 21px/28px "sf_cartoonist_handregular", sans-serif;
     a {
       padding: 3px 7px;
       color: #fff;
@@ -96,21 +107,20 @@
     line-height: 22px;
     font-family: sans-serif;
   }
-}
-
-.button .inner {
-  text-align: left;
-  color: #fff;
-  font-size: 17pt;
-  line-height: 17pt;
-  margin-top: 38px;
-  margin-left: 10px;
-  font-weight: normal;
+  &.weiter {
+    .inner {
+      color: red;
+      margin-top: 16px;
+      font-size: 27px;
+      line-height: 27px;
+      font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;      
+    }
+  }
 }
 
 body {
   /* the page itself */
-  background-color: #fff;
+  background-color: #a6d6ec;
   // background-image: url(../images/background.jpg);
   background-repeat:no-repeat;
   background-position:center 80px; 
@@ -133,32 +143,6 @@ table {
 
 #stage {
   position: absolute;
-
-  // #scene13 {
-  //   .quiz {
-  //     width: 280px;
-  //     margin-left: 55px;
-  //     margin-top: 70px;
-  //     padding: 0;
-
-  //     .inner {
-  //       text-align: left;
-  //       font-family: "de-walpergens-pica", serif !important;
-  //       font-size: 20px;
-  //       line-height: 25px;
-  //       color: #2d1c13;
-  //       padding: 0;
-  //       margin: 0;
-  //       width: 280px;
-  //       h1 {
-  //         font-size: 30px;
-  //         line-height: 34px;
-  //       }
-  //     }
-  //   }
-  // }
-
-
 
   .quiz {
     text-align: left;
@@ -185,7 +169,7 @@ table {
 
     .inner {
       text-align: left;
-      font-family: "de-walpergens-pica", serif !important;
+      font-family: "sf_cartoonist_handregular", serif !important;
       font-size: 22px;
       line-height: 27px;
       color: #2d1c13;
@@ -197,6 +181,7 @@ table {
       .inner {
         font-size: 30px;
         line-height: 40px;
+        font-family: "sf_cartoonist_handbold";
         font-weight: bold;
       }
     }
@@ -232,8 +217,8 @@ table {
       margin: none;
       position: absolute;
       // border: none;
-      top: 250px;
-      left: 330px;
+      top: 160px;
+      left: 250px;
       // text-align: center;
       width: 200px;
       // right: 219px;

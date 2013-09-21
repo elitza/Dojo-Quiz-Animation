@@ -7,13 +7,13 @@ function quizQuestion(scene, key, nextQuestion){
 	if (typeof scene.numberOfQuestions === 'undefined') scene.numberOfQuestions = 0;
 	scene.numberOfQuestions++;
 
-	thisQuestion.titleactor = scene.createActor('blank.png', 110, 120, 250, 60).setText(thisQuestion.data.title, '', 'quiz title');
-	thisQuestion.questionactor = scene.createActor('blank.png', 110, 400, 600, 180).setText(thisQuestion.data.text, '', 'quiz text question');
+	thisQuestion.titleactor = scene.createActor('blank.png', 40, 40, 250, 60).setText(thisQuestion.data.title, '', 'quiz title');
+	thisQuestion.questionactor = scene.createActor('blank.png', 40, 90, 600, 180).setText(thisQuestion.data.text, '', 'quiz text question');
 
 	if (typeof thisQuestion.data.imagepath !== 'undefined' && thisQuestion.data.imagepath !== '') {
-		thisQuestion.fragebild = scene.createActor(thisQuestion.data.imagepath, 110, 170);
+		thisQuestion.fragebild = scene.createActor(thisQuestion.data.imagepath, 400, 90);
 	} else {
-		thisQuestion.fragebild = scene.createActor('blank.png', 0, 0, 0, 0);		
+		thisQuestion.fragebild = scene.createActor('blank.png', 0, 0, 0, 0);
 	}
 
 	if (typeof thisQuestion.data.audiopath !== 'undefined' && thisQuestion.data.audiopath !== '') {
