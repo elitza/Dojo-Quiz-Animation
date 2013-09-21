@@ -25,30 +25,6 @@
   .text a, .hastext a {
     color: #33e;
     text-decoration: none; }
-  .text.title, .text .title, .hastext.title, .hastext .title {
-    font-weight: 700;
-    font-size: 150%; }
-  .text.eulenrat, .hastext.eulenrat {
-    text-align: left;
-    font-size: 24px;
-    line-height: 25px;
-    margin: 90px 75px 0 230px;
-    width: 500px;
-    height: 300px;
-    overflow-x: auto;
-    padding: 0; }
-    .text.eulenrat .inner, .hastext.eulenrat .inner {
-      width: 470px;
-      padding: 0;
-      font-family: "Helvetica", serif;
-      font-size: 20px;
-      line-height: 30px;
-      color: #2d1c13; }
-      .text.eulenrat .inner p, .hastext.eulenrat .inner p {
-        margin: 10px 5px; }
-
-.scene div:active, .scene div:hover, .scene img:active, .scene img:hover {
-  cursor: url("/images/cursor.png") 0 0, auto; }
 
 /* =========================================================== */
 /* FALLBACK */
@@ -102,10 +78,9 @@
 
 body {
   /* the page itself */
-  background-color: #160a04;
-  background-image: url(../images/background.jpg);
+  background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 80px;
   padding: 0;
   margin: 0;
   min-width: 1190px; }
@@ -120,38 +95,21 @@ table {
 
 #stage {
   position: absolute; }
-  #stage #scene13 .quiz {
-    width: 280px;
-    margin-left: 55px;
-    margin-top: 70px;
-    padding: 0; }
-    #stage #scene13 .quiz .inner {
-      text-align: left;
-      font-family: "de-walpergens-pica", serif !important;
-      font-size: 20px;
-      line-height: 25px;
-      color: #2d1c13;
-      padding: 0;
-      margin: 0;
-      width: 280px; }
-      #stage #scene13 .quiz .inner h1 {
-        font-size: 30px;
-        line-height: 34px; }
-  #stage #scene14 .quiz, #stage #scene15 .quiz, #stage #scene16 .quiz {
+  #stage .quiz {
     text-align: left;
     padding: 0;
     margin: 0; }
-    #stage #scene14 .quiz.answer, #stage #scene15 .quiz.answer, #stage #scene16 .quiz.answer {
+    #stage .quiz.answer {
       padding-left: 55px;
       background-position: top left;
       background-repeat: no-repeat no-repeat; }
-    #stage #scene14 .quiz.answer0, #stage #scene15 .quiz.answer0, #stage #scene16 .quiz.answer0 {
+    #stage .quiz.answer0 {
       background-image: url(/images/quiz/a.png); }
-    #stage #scene14 .quiz.answer1, #stage #scene15 .quiz.answer1, #stage #scene16 .quiz.answer1 {
+    #stage .quiz.answer1 {
       background-image: url(/images/quiz/b.png); }
-    #stage #scene14 .quiz.answer2, #stage #scene15 .quiz.answer2, #stage #scene16 .quiz.answer2 {
+    #stage .quiz.answer2 {
       background-image: url(/images/quiz/c.png); }
-    #stage #scene14 .quiz .inner, #stage #scene15 .quiz .inner, #stage #scene16 .quiz .inner {
+    #stage .quiz .inner {
       text-align: left;
       font-family: "de-walpergens-pica", serif !important;
       font-size: 22px;
@@ -159,15 +117,23 @@ table {
       color: #2d1c13;
       padding: 0;
       margin: 0; }
-    #stage #scene14 .quiz.explanation, #stage #scene15 .quiz.explanation, #stage #scene16 .quiz.explanation {
+    #stage .quiz.title .inner {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold; }
+    #stage .quiz.question .inner {
+      font-size: 25px;
+      line-height: 32px;
+      font-weight: bold; }
+    #stage .quiz.explanation {
       width: 405px; }
-      #stage #scene14 .quiz.explanation .inner, #stage #scene15 .quiz.explanation .inner, #stage #scene16 .quiz.explanation .inner {
+      #stage .quiz.explanation .inner {
         width: 355px;
         overflow: hidden;
         text-align: center;
         margin-top: 150px;
         margin-left: 45px; }
-    #stage #scene14 .quiz.results, #stage #scene15 .quiz.results, #stage #scene16 .quiz.results {
+    #stage .quiz.results {
       font-size: 22px;
       line-height: 26px; }
   #stage .loader .inner {
@@ -180,39 +146,6 @@ table {
     position: absolute;
     right: 37px;
     top: 49px; }
-
-#rahmen_wrapper_wrapper {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  min-width: 1200px;
-  text-align: center; }
-  #rahmen_wrapper_wrapper #topmenuwrapper {
-    position: relative;
-    clear: both;
-    width: 1180px;
-    margin: 0 auto;
-    top: 0px;
-    text-align: center;
-    overflow: hidden; }
-    #rahmen_wrapper_wrapper #topmenuwrapper .logo {
-      z-index: 51;
-      position: relative; }
-    #rahmen_wrapper_wrapper #topmenuwrapper img {
-      float: left;
-      border: 0;
-      display: inline-block; }
-  #rahmen_wrapper_wrapper #footerwrapper {
-    position: relative;
-    top: 460px;
-    padding-left: 0px; }
-    #rahmen_wrapper_wrapper #footerwrapper #footer {
-      margin-left: auto;
-      margin-right: auto; }
-      #rahmen_wrapper_wrapper #footerwrapper #footer img {
-        display: inline-block;
-        float: left; }
 
 #rahmen_wrapper {
   position: absolute;

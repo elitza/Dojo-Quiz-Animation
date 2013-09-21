@@ -42,47 +42,8 @@
     color: #33e;
     text-decoration: none;
   }
-
-  &.title, .title {
-    font-weight: 700;
-    font-size: 150%;
-  }
-
-  &.eulenrat {
-    // border: 2px solid red;
-    text-align: left;
-    font-size: 24px;
-    line-height: 25px;
-
-    margin: 90px 75px 0 230px;
-    width: 500px;
-    height: 300px;
-    overflow-x: auto; 
-    padding: 0;
-
-    & .inner {
-      width: 470px;
-      padding: 0;
-      font-family: "de-walpergens-pica", serif;
-      font-size: 20px;
-      line-height: 30px;
-      color: #2d1c13;
-
-      p {
-        margin: 10px 5px;
-      }
-    }
-  }
 }
 
-// SPECIAL CURSOR
-.scene {
-  & div, & img {
-    &:active, &:hover {
-      cursor: url('/cursor.png') 0 0, auto;       
-    }
-  }
-}
 
 /* =========================================================== */
 /* FALLBACK */
@@ -149,10 +110,10 @@
 
 body {
   /* the page itself */
-  background-color: #160a04;
-  background-image: url(../images/background.jpg);
+  background-color: #fff;
+  // background-image: url(../images/background.jpg);
   background-repeat:no-repeat;
-  background-position:center top; 
+  background-position:center 80px; 
   padding: 0;
   margin: 0;
   min-width: 1190px;
@@ -172,88 +133,100 @@ table {
 
 #stage {
   position: absolute;
-  // top: 45px;
 
-  #scene13 {
-    .quiz {
-      width: 280px;
-      margin-left: 55px;
-      margin-top: 70px;
-      padding: 0;
+  // #scene13 {
+  //   .quiz {
+  //     width: 280px;
+  //     margin-left: 55px;
+  //     margin-top: 70px;
+  //     padding: 0;
 
-      .inner {
-        text-align: left;
-        font-family: "de-walpergens-pica", serif !important;
-        font-size: 20px;
-        line-height: 25px;
-        color: #2d1c13;
-        padding: 0;
-        margin: 0;
-        width: 280px;
-        h1 {
-          font-size: 30px;
-          line-height: 34px;
-        }
-      }
+  //     .inner {
+  //       text-align: left;
+  //       font-family: "de-walpergens-pica", serif !important;
+  //       font-size: 20px;
+  //       line-height: 25px;
+  //       color: #2d1c13;
+  //       padding: 0;
+  //       margin: 0;
+  //       width: 280px;
+  //       h1 {
+  //         font-size: 30px;
+  //         line-height: 34px;
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
+  .quiz {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    &.answer {
+      padding-left: 55px;
+      background-position: top left;
+      background-repeat: no-repeat no-repeat;
     }
-  }
 
-  #scene14, #scene15, #scene16 {
+    &.answer0 {
+      background-image: url(/images/quiz/a.png);
+    }
 
-    .quiz {
+    &.answer1 {
+      background-image: url(/images/quiz/b.png);
+    }
+
+    &.answer2 {
+      background-image: url(/images/quiz/c.png);
+    }
+
+    .inner {
       text-align: left;
+      font-family: "de-walpergens-pica", serif !important;
+      font-size: 22px;
+      line-height: 27px;
+      color: #2d1c13;
       padding: 0;
       margin: 0;
+    }
 
-      &.answer {
-        padding-left: 55px;
-        background-position: top left;
-        background-repeat: no-repeat no-repeat;
-      }
-
-      &.answer0 {
-        background-image: url(/images/quiz/a.png);
-      }
-
-      &.answer1 {
-        background-image: url(/images/quiz/b.png);
-      }
-
-      &.answer2 {
-        background-image: url(/images/quiz/c.png);
-      }
-
+    &.title {
       .inner {
-        text-align: left;
-        font-family: "de-walpergens-pica", serif !important;
-        font-size: 22px;
-        line-height: 27px;
-        color: #2d1c13;
-        padding: 0;
-        margin: 0;
-      }
-
-      &.explanation {
-        width: 405px;
-        // border: 2px solid red;
-        .inner {
-          // border: 1px solid green;
-          width: 355px;
-          overflow: hidden;
-          text-align: center;
-          margin-top: 150px;
-          margin-left: 45px;
-        }
-      }
-
-      &.results {
-        // border: 1px solid green;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bold;
       }
     }
-  }
 
+    &.question {
+      .inner {
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: bold;
+      }
+    }
+
+    &.explanation {
+      width: 405px;
+      .inner {
+        width: 355px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 45px;
+      }
+    }
+
+    &.results {
+      // border: 1px solid green;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  
   .loader {
     .inner {
       margin: none;
@@ -266,52 +239,6 @@ table {
       position: absolute;
       right: 37px;
       top: 49px;
-    }
-  }
-}
-
-#rahmen_wrapper_wrapper {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  min-width: 1200px;
-  text-align: center;
-
-  #topmenuwrapper {
-    position: relative;
-    clear: both;
-    width: 1180px;
-    margin: 0 auto;
-    top: 0px;
-
-    // z-index: 0.5;
-    text-align: center;
-    overflow: hidden;
-
-    .logo {
-      z-index: 51;
-      position: relative;
-    }
-
-    img {
-      float: left;
-      border: 0;
-      display: inline-block;
-    }    
-  }
-
-  #footerwrapper {
-    position: relative;
-    top: 460px;
-    padding-left: 0px;
-    #footer {
-      margin-left: auto;
-      margin-right: auto;
-      img {
-        display: inline-block;
-        float: left;
-      }
     }
   }
 }

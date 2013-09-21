@@ -25,8 +25,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö!', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Autsch!', audiopath: 'quack'}
+				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö!', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -39,8 +38,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Fein!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'},
-				{correct: true, title: 'Es gibt eine Nuss zu knacken', explanation: 'Ja.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -53,8 +51,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Korrekt.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Richtig.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -67,8 +64,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nein.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super!', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -81,8 +77,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Super.', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ganz genau!', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Hmmm.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ganz genau!', audiopath: 'quack'}
 			]	
 		}
 	}
@@ -95,8 +90,7 @@ function quizData(key){
 			text: 'Hier kommt deine Frage hin',
 			answers: [
 				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Ähhh, wie kommst Du denn darauf?', audiopath: 'quack'},
-				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'},
-				{correct: false, title: 'Hier kommt eine falsche Antwort hin.', explanation: 'Nö.', audiopath: 'quack'}
+				{correct: true, title: 'Hier kommt eine richtige Antwort hin.', explanation: 'Ja.', audiopath: 'quack'}
 			]	
 		}
 	}
