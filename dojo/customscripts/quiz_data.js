@@ -10,16 +10,16 @@ function quizData(key){
 			one_question: 'eine Frage',
 			x_questions: '%count% Fragen',
 			resultsTitle: 'Auswertung',
-			level1: "Exzellent, ich hätte es selbst nicht besser wissen können. ",
-			level2: 'Nun, das war schon mal eine wirklich brauchbare Leistung. Immerhin %correct% richtig von %total% insgesamt!',
-			level3: 'Das war schon mal ein ziemlich guter Versuch. Immerhin %correct% richtig von %total% insgesamt!',
+			level1: "Toll! Niemand hätte es besser wissen können. ",
+			level2: 'Wirklich gut! Immerhin %correct% richtig von %total% insgesamt!',
+			level3: 'Gar nicht schlecht. Immerhin %correct% richtig von %total% insgesamt!',
 			level4: 'Schade! Du warst vielleicht etwas zu aufgeregt.Viel Glück. Und bis zum nächsten Mal. (In diesem Versuch hast Du %correct% richtig getroffen, von %total% insgesamt)',
 			}
 	}
 
 	if (key === 'q1_1') {
 		ret = {
-			title: "Frage 1",
+			title: "Frage von Maia",
 			imagepath: 'frage1.jpg',
 			audiopath: '',
 			text: 'Wofür steht die grüne Partei?',
@@ -32,7 +32,7 @@ function quizData(key){
 
 	if (key === 'q1_2') {
 		ret = {
-			title: "Frage 2",
+			title: "Frage von Patryck und Martyna",
 			imagepath: 'frage2.jpg',
 			audiopath: '',
 			text: 'Wer kandidiert zum Bundeskanzler?',
@@ -45,7 +45,7 @@ function quizData(key){
 
 	if (key === 'q1_3') {
 		ret = {
-			title: "Frage 3",
+			title: "Frage von Kian",
 			imagepath: 'frage3.jpg',
 			audiopath: '',
 			text: 'Wieviele Bundeskanzler gab es bis heute?',
@@ -58,7 +58,7 @@ function quizData(key){
 
 	if (key === 'q1_4') {
 		ret = {
-			title: "Frage 4",
+			title: "Frage von Dominik",
 			imagepath: 'frage4.jpg',
 			audiopath: '',
 			text: 'Was ist eine Partei?',
@@ -71,7 +71,7 @@ function quizData(key){
 
 	if (key === 'q1_5') {
 		ret = {
-			title: "Frage 5",
+			title: "Frage von Erasmus",
 			imagepath: 'frage5.jpg',
 			audiopath: '',
 			text: 'Wer war der erste deutsche Bundeskanzler?',
@@ -84,7 +84,7 @@ function quizData(key){
 
 	if (key === 'q1_6') {
 		ret = {
-			title: "Frage 6",
+			title: "Frage von Leo (9J ahre alt)",
 			imagepath: 'frage6.jpg',
 			audiopath: '',
 			text: 'Welche Partei fordert 10 Euro Mindestlohn?',
@@ -97,7 +97,7 @@ function quizData(key){
 
 	if (key === 'q1_7') {
 		ret = {
-			title: "Frage 7",
+			title: "Frage von Levia (6 Jare alt)",
 			imagepath: 'frage7.jpg',
 			audiopath: '',
 			text: 'Welcher dieser beiden Politiker gehört zu den Grünen?',
@@ -110,7 +110,7 @@ function quizData(key){
 
 	if (key === 'q1_8') {
 		ret = {
-			title: "Frage 8",
+			title: "Frage von Luna",
 			imagepath: 'frage8.jpg',
 			audiopath: '',
 			text: 'Gibt es Wahlen für Kinder?',
@@ -123,7 +123,7 @@ function quizData(key){
 
 	if (key === 'q1_9') {
 		ret = {
-			title: "Frage 9",
+			title: "Frage von Pia (11 Jahre alt)",
 			imagepath: 'frage9.jpg',
 			audiopath: '',
 			text: 'Wieviel Prozent der Ingenieursstudenten sind weiblich?',
@@ -136,13 +136,13 @@ function quizData(key){
 
 	if (key === 'q1_10') {
 		ret = {
-			title: "Frage 10",
+			title: "Frage von Leo (9 Jahre alt)",
 			imagepath: 'frage10.jpg',
 			audiopath: '',
 			text: 'Welche Partei hat den Slogan: Gemeinsam erfolgreich',
 			answers: [
 				{correct: true, title: 'Die CDU', explanation: 'Ja', audiopath: 'richtig'},
-				{correct: false, title: 'Die SPD', explanation: 'Wie bitte?', audiopath: 'falsch'},
+				{correct: false, title: 'Die SPD', explanation: 'Unsinn!', audiopath: 'falsch'},
 			]	
 		}
 	}
