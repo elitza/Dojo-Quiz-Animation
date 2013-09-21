@@ -8,7 +8,8 @@ Scene.prototype.createActor = function (filename, startAtX, startAtY, width, hei
   var actor = new Actor(startAtX, startAtY, width, height);
   actor.scene = this;
   actor.actortype = "image";
-  var defaultImageDirectory = onLocalhost() ? 'images/' : window.animation.config.cdnDomain + '/images/';
+  var defaultImageDirectory = 'images/';
+  // var defaultImageDirectory = onLocalhost() ? 'images/' : window.animation.config.cdnDomain + '/images/';
 
   actor.setup = function () {
     actor.image = document.createElement('img');

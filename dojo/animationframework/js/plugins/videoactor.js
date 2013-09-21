@@ -10,7 +10,6 @@ Scene.prototype.createVideoActor = function (fileName, startAtX, startAtY, width
         actor.image = document.createElement('video');
         actor.image.originalPath = fileName;
         actor.filename = fileName.substring(fileName.lastIndexOf('/') + 1);
-        //actor.image.setAttribute('poster', 'http://localhost:23268/merlantis_dev/images/quiz/intro_bg.png');
 
         if (ismobile()) {
             actor.image.setAttribute('controls', 'controls');

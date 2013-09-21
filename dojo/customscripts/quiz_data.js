@@ -84,7 +84,7 @@ function quizData(key){
 
 	if (key === 'q1_6') {
 		ret = {
-			title: "Frage von Leo (9J ahre alt)",
+			title: "Frage von Leo (9 Jahre alt)",
 			imagepath: 'frage6.jpg',
 			audiopath: '',
 			text: 'Welche Partei fordert 10 Euro Mindestlohn?',
@@ -97,7 +97,7 @@ function quizData(key){
 
 	if (key === 'q1_7') {
 		ret = {
-			title: "Frage von Levia (6 Jare alt)",
+			title: "Frage von Levia (6 Jahre alt)",
 			imagepath: 'frage7.jpg',
 			audiopath: '',
 			text: 'Welcher dieser beiden Politiker gehört zu den Grünen?',

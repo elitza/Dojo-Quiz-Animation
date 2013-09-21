@@ -7,8 +7,8 @@ function quizQuestion(scene, key, nextQuestion){
 	if (typeof scene.numberOfQuestions === 'undefined') scene.numberOfQuestions = 0;
 	scene.numberOfQuestions++;
 
-	thisQuestion.titleactor = scene.createActor('blank.png', 40, 40, 250, 60).setText(thisQuestion.data.title, '', 'quiz title');
-	thisQuestion.questionactor = scene.createActor('blank.png', 40, 90, 600, 180).setText(thisQuestion.data.text, '', 'quiz text question');
+	thisQuestion.titleactor = scene.createActor('blank.png', 40, 40, 500, 60).setText(thisQuestion.data.title, '', 'quiz title');
+	thisQuestion.questionactor = scene.createActor('blank.png', 40, 90, 300, 180).setText(thisQuestion.data.text, '', 'quiz text question');
 
 	if (typeof thisQuestion.data.imagepath !== 'undefined' && thisQuestion.data.imagepath !== '') {
 		thisQuestion.fragebild = scene.createActor(thisQuestion.data.imagepath, 400, 90);
@@ -37,15 +37,15 @@ function quizQuestion(scene, key, nextQuestion){
 
 	var black = scene.createActor('blackblock_40_opacity.png', 0, 0, 960, 660).isOnTop();
 
-	var answerXPosition = 55;
+	var answerXPosition = 0;
 	var nextAnswerXPositionStep = 375;
 
-	var weiterbutton = scene.createActor('rechts.png', 610, 355, 50, 50).isOnTop(3);
+	var weiterbutton = scene.createActor('rechts.png', 370, 322 , 50, 50).isOnTop(3);
 
 	// LOOP THROUGH ANSWERS
 	for (var i = 0; i < thisQuestion.data.answers.length; i++) {
 		var qData = thisQuestion.data.answers[i];
-		var answeractor = scene.createActor('blank.png', answerXPosition, 500, 220, 300);
+		var answeractor = scene.createActor('blank.png', answerXPosition, 340, 220, 300);
 		var answerplayer = scene.createActor('sprecher.png', 615, 170, 36, 28).isOnTop(3).plays(qData.audiopath, 'blank.png');
 		answeractor.setText(qData.title, '', 'quiz answer answer' + i);
 		answeractor.letsAppear(black, 0, 0);
@@ -53,22 +53,24 @@ function quizQuestion(scene, key, nextQuestion){
 
 		if (qData.correct) {
 			// correct answer
-			var correctactor = scene.createActor('zettel.png', 250, 130, 433, 297).isOnTop(2).addClass('answer' + i);
+			var correctactor = scene.createActor('zettel.png', 170, 100, 433, 297).isOnTop(2).addClass('answer' + i);
 			correctactor.setText(qData.explanation, '', 'quiz correct explanation');
 			weiterbutton.letsDissolve(correctactor);
 			weiterbutton.letsDissolve(answerplayer);
 			answeractor.letsAppear(correctactor);
 			answeractor.letsAppear(weiterbutton);
 			answeractor.letsAppear(answerplayer);
+			answeractor.letsStartPlaying(answerplayer);
 			answeractor.letsAddToCounter(scene.quizCorrectAnswersCounter, 1, 1);
 
 		} else {
 			// wrong answer
-			var wrongactor = scene.createActor('zettel.png', 250, 130, 433, 297).isOnTop(2);
+			var wrongactor = scene.createActor('zettel.png', 170, 100, 433, 297).isOnTop(2);
 			wrongactor.setText(qData.explanation, '', 'quiz wrong explanation');
 			answeractor.letsAppear(wrongactor);
 			answeractor.letsAppear(weiterbutton);
 			answeractor.letsAppear(answerplayer);
+			answeractor.letsStartPlaying(answerplayer);
 			weiterbutton.letsDissolve(wrongactor);
 			weiterbutton.letsDissolve(answerplayer);
 		}
