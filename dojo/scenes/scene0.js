@@ -11,7 +11,8 @@ var scene0 = function () {
 	scene.write(40, 40, "Wie wahlfit bist Du?", "title");
 
 	var text1 = "Dieses Quiz wurde am 21. September 2013 im Rahmen des <a href=\"http://wahldatenhelfer.de/koeln/\">Wahl.Daten.Helfer-Hackathons</a> hergestellt."
-	text1+= "Die Texter und Künstler hinter diesem Quiz sind im Alter von…"
+	text1+= "Die Texter und Künstler hinter diesem Quiz sind im Alter von 6-12 Jahren. Zusammen wurde recherchiert, diskutiert, gebastelt und programmiert."
+  text1+= "Viel Spaß beim Wissenstest wünscht <a href=\"http://mehreinfach.de\">Mehreinfach</a> und das Coder Dojo Köln."
 	scene.write(40, 70, text1, "text_auf_titelseite");
 
   return scene;
